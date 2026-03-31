@@ -4,18 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    # - name: janpfischer
-    #   url-base: https://github.com/janpfischer
+
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: main
       import: app/west.yml
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: fix/stability
-    # - name: zmk-dongle-screen
-    #   remote: janpfischer
-    #   revision: 0.1.2
+      revision: feat/new-status-screens
+      
   self:
     path: config
